@@ -1,0 +1,352 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #00c5cd; 
+    font-family: 'Philosopher', sans-serif;}
+
+.container{
+    margin: 1% 2%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 7% 90%;
+    grid-template-rows: auto;
+    column-gap: 2%;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(87, 87, 87);
+}
+
+a:active{
+    color: #428d6a;
+}
+
+/* Navigation --------------------------------------------- */
+
+nav{
+    height: fit-content;
+    color: black;
+    position: sticky;
+    top: 5%;
+}
+
+#hi-in-nav{
+    background-color: #333;
+    margin: 0% 0% 10% 0%;
+    font-size: 18px;
+    background-color: #378761;
+    border-top: none;
+    font-weight: 800;
+    letter-spacing: .1em;
+    color: #378761;
+    border-radius: .3em;
+    border: 25px solid white;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+nav ul li{
+    text-align: center;
+    padding: 5px 0px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    border-top: .5px solid gray;
+    align-content: center;
+    background-color: rgb(255, 255, 255);
+
+}
+
+navul li:hover{
+    background-color: rgb(94, 62, 62);
+}
+ 
+li img{
+    width: 20%;
+    margin: 5px 0px;
+    align-self: center;
+}
+
+/*--------------------------------------------------------------*/
+
+head{
+    height: fit-content;
+}
+
+.about{
+
+    display: flex;
+    flex: 1fr 3fr;
+    justify-content: center;
+    
+}
+
+/* Heading section-----------------------------------------------*/
+
+.my-pic-section{
+    flex: 40%;
+    background-color: white;
+    text-align: center;
+    padding: 40px 0px;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 40%);
+}
+
+.my-pic-section img{
+    width: 70%;
+    border-radius: 50%;
+    
+}
+
+.heading{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.heading h2{
+    font-size: 35px;
+    padding-top: 10px;
+}
+
+.heading p{
+    font-size: 20px;
+    font-weight: 700;
+    color: #428d6a;
+}
+
+#get-in-touch{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.my-pic-section .connect{
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    column-gap: 10%;
+}
+
+.connect img{
+    width: 25px;
+}
+
+
+
+/* About Me section ------------------------------------------*/
+
+.info-section{
+    z-index: -10;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 20px 50px;
+    flex: 60%;
+    background-color: white;
+}
+
+.about-me{
+    width: 90%;
+    margin: auto;
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.about-me h2{
+    font-size: 30px;
+    color: #428d6a;
+
+}
+
+.about-me p{
+    font-size: 20px;
+}
+
+/* Education -------------------------------------------------*/
+
+.education{
+    margin-top: 50px;
+    padding: 20px 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 40%);
+}
+
+.edu-heading{
+    padding: 20px;
+    display: flex;
+    column-gap: 15px;
+    border-radius: 10%;
+}
+
+.edu-heading h2{
+    font-size: 36px;
+    color: #000000;
+}
+
+.edu-card-box{
+    display: flex;
+    column-gap: 10%;
+    row-gap: 25px;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.edu-card{
+    width: 40%;
+}
+
+.edu-card h2{
+    width: fit-content;
+    padding: 8px 16px;
+    background-color:#55cf8c;
+    margin-bottom: 10px;
+}
+
+.experience{
+    margin-top: 50px;
+    padding: 20px 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 40%);
+}
+
+.skills{
+        margin-top: 50px;
+        padding: 20px 20px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 5px 10px rgb(0 0 0 / 40%);
+}
+
+.skills-card-box{
+    padding: 20px 0px;
+    display: flex;
+    column-gap: 10%;
+    row-gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-card{
+    border: 1px solid gray;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.skill-card img{
+    margin: 5px 0px;
+}
+
+.skill-card p{
+    align-self: center;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+hr{
+    margin: auto;
+    width: 80%;
+    
+}
+
+.projects{
+    margin-top: 50px;
+    padding: 20px 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 40%);
+}
+
+.projects-card-box{
+    display: flex;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 15%;
+}
+
+.project-card{
+    width: 40%;
+}
+
+.project-card h2{
+    width: fit-content;
+    background-color: #55cf8c;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+}
+
+.project-card p{
+    padding-bottom: 15px;
+}
+
+.project-card a{
+    background-color: #acecc9;
+    font-weight: 800;
+    color: black;
+    padding: 5px 10px;
+}
+
+.project-card a:hover{
+    background-color: #7fb698;
+}
+
+.contact{
+    margin-top: 50px;
+    padding: 20px 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 40%);
+}
+
+.contact-card-box{
+    display:flex;
+    column-gap: 15%;
+    row-gap: 15px;
+}
+
+.contact-card{
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.contact-card img{
+    width: 20px;
+    align-self: center;
+}
+
+.contact-card p{
+    align-self: center;
+    color: gray;
+}
+
+#credits{
+    margin-left: 11%;
+    margin-right: 2%;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 1.5em;
+}
