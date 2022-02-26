@@ -1,0 +1,729 @@
+*{
+    margin: 0px;
+}
+
+body{
+    width: 100%;
+    margin: 0px;
+    font-family: 'Arimo', sans-serif;
+}
+
+.nav{
+    margin: auto;
+    height: 60px;
+    padding: 5px 0px;
+    background-color: #3b2f2f;
+    color: white;
+    z-index: 22;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 30%), 0 3px 8px rgb(0 0 0 / 20%);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.nav p{
+    font-family: 'Aclonica', sans-serif;
+    font-size: 40px;
+    width: fit-content;
+    margin-top: 0px;
+    margin-left: 10%;
+    padding-right: 10px;
+    flex: 1fr;
+}
+
+.nav .right-side-nav{
+    width: fit-content;
+    height: fit-content;
+    margin-right: 10%;
+    flex: 1fr;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1.5em;
+}
+
+.right-side-nav a{
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    font-weight: 800;
+    padding: 10px 15px;
+    letter-spacing: .15em;
+    transition: 0.7s;
+}
+
+.nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+.first_view{
+    background-image: url(/Images/background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.header{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    padding: 60px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-header h1{
+    color: white;
+    font-size: 92px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+
+.header h1 #chai{
+    font-family: 'Aclonica', sans-serif;
+}
+
+.header .join-us-form{
+    color: white;
+    height: fit-content;
+}
+
+.header .join-us-form p{
+    font-size: 25px;
+    padding: 0px 50px;
+}
+
+
+.header .join-us-form #form-chai{
+    font-family: 'Aclonica', sans-serif;
+}
+
+.header form{
+    padding: 20px 0px;
+    border: 2px solid #535455;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    align-self: center;
+}
+
+.header form p{
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.stylish-input{
+    width: 80%;
+    align-self: center;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+
+.stylish-input input{
+    width: 100%;
+    height: 100%;
+    color: gray;
+    padding-top: 15px;
+    border: none;
+    outline: none;
+}
+
+.stylish-input label{
+    position: absolute;
+    color: black;
+    font-size: 15px;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.stylish-input label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid rgb(150, 97, 62);
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+}
+
+.content{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.4s ease;
+}
+
+.stylish-input input:focus + .label-name .content, 
+.stylish-input input:valid + .label-name .content{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: black;
+}
+
+.stylish-input input:focus + .label-name::after,
+.stylish-input input:valid + .label-name::after{
+    transform: translateX(0%);
+}
+
+.header form #submit-button{
+    width: fit-content;
+    align-self: center;
+    text-align: left;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.header form #submit-button:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+#info{
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.main{
+    width: 80%;
+    margin: auto;
+}
+
+.we-are-famous-for{
+    margin: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.we-are-famous-for h1{
+    text-align: center;
+    font-size: 72px;
+    font-weight: 800;
+}
+
+.we-are-famous-for .card-box{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 5%;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.card-box .card{
+    width: 18%;
+    align-items: center;
+    text-align: center;
+    border: 0.1rem solid #e7e9ed;    border-radius: 0.4rem;
+    padding: 10px 10px;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+}
+
+.card:hover{
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 40%);
+    transition: 1s;
+}
+
+.card img{
+    width: 90%;
+    border-radius: 5px;
+}
+
+.card h4{
+    background-color: darkgray;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 10px 0px 10px 0px;
+    border-top: 1px solid rgb(173, 173, 173);
+    border-bottom: 1px solid rgb(173, 173, 173);
+}
+
+.card .ratings{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    justify-content: center;
+}
+
+.ratings img{
+    width: 10%;
+    align-self: center;
+}
+
+.we-are-famous-for a{
+    margin-top: 20px;
+    width: fit-content;
+    align-self: flex-end;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+    border: 1px solid black;
+    font-weight: 600;
+}
+
+.we-are-famous-for a:hover{
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.we-are-available{
+    margin: 60px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.we-are-available h1{
+    text-align: center;
+    font-size: 72px;
+    font-weight: 800;
+}
+
+.box-location{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 20px;
+
+}
+
+.location{
+    width: 30%;
+    column-gap: 20px;
+}
+
+.location img{
+    width: 10%;
+    margin: 5px 2px;
+    height: fit-content;
+    align-self: center;
+}
+
+.location p{
+    height: fit-content;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.box-location .location{
+    width: 40%;
+    margin: 5px 0px;
+    border: 0.1rem solid #e7e9ed;border-radius: 0.4rem;
+    display: flex;
+    justify-content:left;
+}
+
+.box-location .location:hover{
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 40%);
+    transition: 1s;
+}
+
+.we-are-available #coming-soon{
+    width: fit-content;
+    align-self: center;
+    font-size: 40px;
+    padding: 10px 20px;
+    background-color: #3b2f2f;
+    color: white;
+    font-weight: 800;
+    border-left: 10px solid black;
+
+}
+
+.footer{
+    margin-bottom: 0px;
+    background-color: #3b2f2f;
+    color: white;
+}
+
+.inner-footer{
+    width: 80%;
+    margin: auto;
+}
+
+.footer-main{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+
+.footer-main-col{
+    display: flex;
+    flex-direction: column;
+    column-gap: 25px;
+}
+
+.footer-main-col h3{
+    text-align: left;
+    padding: 20px 0px;
+    font-weight: 800;
+}
+
+ul{
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+li{
+    list-style-type: none;
+    margin-left: 0px;
+    opacity: .7;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+li.sp-list{
+    padding-left: 20px;
+}
+
+.footer-main-col a{
+    text-decoration: none;
+    color: white;
+}
+
+hr{
+    height: 5px;
+    opacity: .7;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+
+.footer-bottom{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bottom-logo{
+    height: fit-content;
+    align-self: center;
+    font-family: 'Aclonica', sans-serif;
+    font-size: 2rem;
+}
+
+#copyright{
+    align-self: center;
+    font-size: .8rem;
+}
+
+.social-media-logos{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+.social-media-logos img{
+    width: 50px;
+    opacity: .7;
+}
+
+
+@media (min-width: 768px) and (max-width: 1050px) {
+    .left-header h1{
+        font-size: 82px;        
+    }
+
+    .card-box .card{
+        width: 35%;
+    }
+
+    .we-are-famous-for a{
+        align-self: center;
+    }
+
+    .we-are-available #coming-soon{
+        font-size: 32px;
+    }
+
+    .footer-main{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .footer-main-col{
+        width: 50%;
+        align-self: flex-start;
+    }
+
+    
+}
+
+@media (min-width: 610px) and (max-width: 767px) {
+
+    .header{
+        padding: 20px 0px;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-header h1{
+        font-size: 72px;
+        line-height: 1.7em;
+        padding-bottom: 10px;
+    }
+
+    .first_view{
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .card-box .card{
+        width: 40%;
+    }
+
+    .we-are-famous-for a{
+        align-self: center;
+    }
+
+    .box-location .location{
+        width: 80%;
+        column-gap: 20px;
+    }
+
+    .we-are-available #coming-soon{
+        font-size: 27px;
+    }
+
+    .footer-main{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-main-col{
+        width: 40%;
+        align-self: flex-start;
+    }
+
+    .social-media-logos img{
+        width: 35px;
+    }
+}
+
+@media (min-width:481px) and (max-width: 609px){
+
+    .nav p{
+        font-size: 40px;
+    }
+
+    .right-side-nav a{
+        border: .5px solid white;
+        font-weight: 600;
+        padding: 10px 10px;
+        font-size: .7em;
+        align-self: center;
+        text-align: center;
+    }
+
+    .header{
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-header h1{
+        font-size: 40px;
+        line-height: 1.7em;
+        padding-bottom: 10px;
+    }
+
+    .first_view{
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .card-box .card{
+        width: 75%;
+    }
+
+    .we-are-famous-for h1{
+        font-size: 52px;
+    }
+
+    
+    .we-are-available h1{
+        font-size: 52px;
+    }
+
+    .we-are-famous-for a{
+        align-self: center;
+    }
+
+    .box-location .location{
+        width: 80%;
+        column-gap: 20px;
+    }
+
+    .we-are-available #coming-soon{
+        font-size: 18px;
+    }
+
+    .footer-main{
+        margin: auto;
+    }
+
+    .footer-main-col{
+        width: 80%;
+        margin: auto;
+    }
+
+    .social-media-logos img{
+        width: 25px;
+    }
+
+    
+#bottom-logo{
+    font-size: 1.5rem;
+}
+
+#copyright{
+    font-size: .6rem;
+}
+
+}
+
+@media (min-width:320px) and (max-width: 480px){
+
+    .nav p{
+        font-size: 35px;
+    }
+
+    .right-side-nav a{
+        border: .5px solid white;
+        font-weight: 500;
+        padding: 8px 10px;
+        font-size: .7em;
+        align-self: center;
+        text-align: center;
+    }
+
+    .header{
+        padding: 0px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-header h1{
+        font-size: 40px;
+        line-height: 1.2em;
+        padding-bottom: 10px;
+    }
+
+    .first_view{
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .form p{
+        font-size: 16px;
+    }
+
+    .card-box .card{
+        width: 75%;
+    }
+
+    .we-are-famous-for h1{
+        font-size: 52px;
+    }
+
+    
+    .we-are-available h1{
+        font-size: 52px;
+    }
+
+    .we-are-famous-for a{
+        align-self: center;
+    }
+
+    .box-location .location{
+        width: 80%;
+        column-gap: 20px;
+    }
+
+    .we-are-available #coming-soon{
+        font-size: 15px;
+        padding: 7px 7px;
+    }
+
+    .footer-main{
+        margin: auto;
+    }
+
+    .footer-main-col{
+        width: 80%;
+        margin: auto;
+        align-self: center;
+    }
+
+    .social-media-logos img{
+        width: 25px;
+    }
+
+    .social-media-logos{
+        width: 50%;
+        align-self: center;
+    }
+
+    .footer-bottom{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    
+    #bottom-logo{
+        font-size: 1.5rem;
+    }
+
+    #copyright{
+        font-size: .8rem;
+    }
+
+}
