@@ -1,0 +1,236 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.head-container{
+    height: 100vh;
+    background: url("/Images/sushant.webp") no-repeat center center/cover ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.head-container h1{
+    font-size: 50px;
+}
+
+.head-container p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.about{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 10%;
+}
+
+.about p{
+    flex: 1fr;
+    justify-self:normal;
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about img{
+    flex: 1fr;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.famous-for{
+    width: 80%;
+    padding: 20px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 10%;
+    flex-wrap: wrap;
+}
+
+.great-card{
+    width: 20%;
+    background-color: rgb(88, 88, 88);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.great-card p{
+    font-size: 14px;
+}
+
+.great-card .card-heading{
+    border-bottom: .005em solid white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    column-gap: 5%;
+}
+
+.card-heading h2{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.card-heading img{
+    width: 10%;
+}
+
+.great-card p{
+    padding: 10px;
+}
+
+.more{
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    column-gap: 20%;
+}
+
+.more .button{
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    column-gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover{
+    box-shadow: 10px 10px 15px gray;
+    transition-duration: 1s;
+}
+
+.button img{
+    width: 20%;
+}
+
+.button p{
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+blockquote{
+    background-color: rgb(34, 34, 34);
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    line-height: 80px;
+}
+
+#philosophy{
+    background-color: white;
+    border-radius: 50%;
+}
+
+.extra{
+    margin: 5% auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+
+.extra-card{
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+.extra-card h2{
+    padding: 10px 0px;
+    border-bottom: .5px solid gray;
+    text-align: center;
+}
+
+ul{
+    list-style-position: inside;
+    margin: 10px 0px;
+}
+
+li{
+    padding: 10px;
+}
+
+#poetry, #dramas{
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+#developed_by{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    line-height: 2em;
+}
+
+
+@media (max-width: 680px){
+    .about{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .famous-for{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .great-card{
+        width: 80%;
+        align-self: center;
+    }
+
+    .more{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+    }
+
+    .button{
+        width: fit-content;
+        align-self: center;
+    }
+
+    blockquote{
+        padding: 15px 10%;
+        line-height: 1em;
+        font-size: 16px;
+    }
+
+    .extra{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+    }
+}
